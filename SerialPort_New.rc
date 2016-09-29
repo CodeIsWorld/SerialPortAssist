@@ -1,0 +1,368 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SerialPort_New.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SerialPort_New.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SerialPort_New"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "串口助手V2.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "update:增加波特率选择和串口遍历",IDC_STATIC,40,25,147,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SERIALPORT_NEW_DIALOG DIALOGEX 0, 0, 379, 290
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION 
+"串口助手V2.9.2                                                                      作者：风流花少//qq:861063204"
+
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "打开串口",IDC_BUTTON_OPEN,7,89,53,17
+    PUSHBUTTON      "清空接收区",IDC_BUTTON_CLEAN,7,118,53,13
+    DEFPUSHBUTTON   "发送数据",IDC_BUTTON_SEND,69,214,50,15,BS_CENTER | 
+                    BS_VCENTER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_RECEIVE,70,20,303,185,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_SEND,69,231,303,52,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "接收:0",IDC_STATIC_RECEIVE_COUNT,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,7,139,53,
+                    14,WS_EX_STATICEDGE
+    LTEXT           "波特率",IDC_STATIC,7,33,25,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_BANDRATE,7,44,53,107,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COM_NUM,7,17,53,83,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "串口号",IDC_STATIC,7,7,26,8,SS_CENTERIMAGE
+    CONTROL         "发送:0",IDC_STATIC_SEND_COUNT,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,7,156,53,
+                    14,WS_EX_STATICEDGE
+    CONTROL         "HEX显示",IDC_CHECK_HEX16_DISP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,138,7,43,10
+    CONTROL         "HEX发送",IDC_CHECK_HEX16_SEND,"Button",BS_AUTOCHECKBOX | 
+                    BS_VCENTER | WS_TABSTOP,137,218,43,10
+    PUSHBUTTON      "清零计数",IDC_BUTTON__CLEAN_COUNT_,7,178,53,13
+    CONTROL         "定时发送",IDC_CHECK_TIMER_SEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,216,46,10
+    EDITTEXT        IDC_EDIT_TEMER_PERIOD,7,229,23,12,ES_AUTOHSCROLL
+    CTEXT           "ms",IDC_STATIC,31,232,13,10
+    LTEXT           "行:0列:0",IDC_STATIC_RECEIVE_LINE_COUNT,71,7,55,13,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "等待:0",IDC_STATIC_THREAD_COUNT_NO_USE,7,201,55,11,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "默认格式",IDC_BUTTON_DATA_FORMAT,7,62,53,13
+    PUSHBUTTON      "关于作者",IDC_BUTTON__ABOUT_AUTHOR,7,258,53,13
+END
+
+IDD_DIALOG_DATA_FORMAT DIALOGEX 1, 1, 95, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "数据格式设置"
+FONT 10, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,21,90,50,14
+    COMBOBOX        IDC_COMBO_DATA_BIT,34,7,41,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO_STOP_BIT,34,24,41,42,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO_CHECK_BIT,34,40,41,50,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    CTEXT           "数据位",IDC_STATIC_DATA_BIT,7,9,25,8,SS_CENTERIMAGE
+    LTEXT           "停止位",IDC_STATIC_STOP_BIT,7,26,25,8
+    LTEXT           "校验位",IDC_STATIC_CHECK_BIT,7,43,25,8
+    CTEXT           " 默认格式为:8,1,""N""\r\n无需修改",IDC_STATIC,7,63,81,
+                    18
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "串口助手By花少\0"
+            VALUE "FileVersion", "V2.6\0"
+            VALUE "InternalName", "串口助手\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SerialPort_New.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "C++应用程序\0"
+            VALUE "ProductVersion", "v2.6\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SERIALPORT_NEW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_DIALOG_DATA_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 88
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SERIALPORT_NEW_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_BANDRATE, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO_BANDRATE, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_COMBO_BANDRATE, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBO_BANDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BANDRATE, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 6, 0
+0x3334, 0x3030, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_BANDRATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0032, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0033, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0034, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0035, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0036, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0037, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0038, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0039, 
+    IDC_COMBO_COM_NUM, 0x403, 6, 0
+0x4f43, 0x324d, 0x0030, 
+    0
+END
+
+IDD_DIALOG_DATA_FORMAT DLGINIT
+BEGIN
+    IDC_COMBO_DATA_BIT, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_DATA_BIT, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_DATA_BIT, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_DATA_BIT, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_STOP_BIT, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_STOP_BIT, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_CHECK_BIT, 0x403, 3, 0
+0xdece, "\000" 
+    IDC_COMBO_CHECK_BIT, 0x403, 3, 0
+0xe6c6, "\000" 
+    IDC_COMBO_CHECK_BIT, 0x403, 3, 0
+0xbcc5, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SerialPort_New(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SerialPort_New.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
